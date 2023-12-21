@@ -3,9 +3,9 @@ const Home = () => {
     <h1
       tabIndex={0}
       style={{
-        "--padding": 10,
+        "--padding": 5,
         "--color": "var(--color-slate-700)",
-        "--hover_color": "var(--color-slate-100)",
+        "--medium_color": "var(--color-sky-500)",
       }}
     >
       Hello world

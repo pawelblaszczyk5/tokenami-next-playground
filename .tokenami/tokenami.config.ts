@@ -3,7 +3,9 @@ import { createConfig } from "@tokenami/dev";
 export default createConfig({
   include: ["./app/**/*.{js,jsx,ts,tsx}"],
   grid: "0.25rem",
-  responsive: {},
+  responsive: {
+    medium: "@media (min-width: 1024px)",
+  },
   theme: {
     alpha: {},
     anim: {},

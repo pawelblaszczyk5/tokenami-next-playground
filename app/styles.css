@@ -14,14 +14,16 @@
   color: var(--color);
 }
 
-[style*="--hover_color:"]:hover {
-  color: var(--hover_color, var(--color));
-}
-
 [style*="--padding:"] {
   padding: calc(var(--grid) * var(--padding));
 }
 
 [style*="--padding:var"], [style*="--padding: var"] {
   padding: var(--padding);
+}
+
+@media (width >= 1024px) {
+  [style*="--medium_color:"] {
+    color: var(--medium_color, var(--color));
+  }
 }
