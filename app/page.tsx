@@ -1,16 +1,39 @@
+import { css } from "@tokenami/css";
+
+const text = css(
+  { "--padding": 2 },
+  {
+    variant: {
+      primary: {
+        "--color": "var(--color-sky-500)",
+      },
+      secondary: {
+        "--color": "var(--color-slate-700)",
+      },
+    },
+  }
+);
 const Home = () => {
   return (
-    <h1
-      tabIndex={0}
-      style={{
-        "--padding": 5,
-        "--color": "var(--color-slate-700)",
-        "--medium_color": "var(--color-sky-500)",
-        "--hover_color": "var(---, red)",
-      }}
-    >
-      Hello world
-    </h1>
+    <div>
+      <p
+        style={text(
+          { variant: "primary" },
+          { "--font-size": "var(---, 2rem)" }
+        )}
+      >
+        Hello world
+      </p>
+      <p
+        style={text(
+          { variant: "secondary" },
+          { "--font-size": "var(---, 2.5rem)" },
+          { "--color": "var(---, red)" }
+        )}
+      >
+        Hello world
+      </p>
+    </div>
   );
 };
 

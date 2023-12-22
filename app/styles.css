@@ -8,10 +8,15 @@
 * {
   --padding: ;
   --color: ;
+  --font-size: ;
 }
 
 [style*="--color:"] {
   color: var(--color);
+}
+
+[style*="--font-size:"] {
+  font-size: var(--font-size);
 }
 
 [style*="--padding:"] {
@@ -20,10 +25,4 @@
 
 [style*="--padding:var"], [style*="--padding: var"] {
   padding: var(--padding);
-}
-
-@media (width >= 1024px) {
-  [style*="--medium_color:"] {
-    color: var(--medium_color, var(--color));
-  }
 }
