@@ -16,7 +16,9 @@ export default createConfig({
       "sky-500": "#0ea5e9",
     },
     ease: {},
-    "font-size": {},
+    "font-size": {
+      sm: "1.25rem",
+    },
     leading: {},
     "line-style": {},
     radii: {},

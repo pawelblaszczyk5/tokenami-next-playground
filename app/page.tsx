@@ -9,6 +9,8 @@ const text = css(
       },
       secondary: {
         "--color": "var(--color-slate-700)",
+        "--medium_hover_color": "var(--color-sky-500)",
+        "--font-size": "var(--font-size-sm)",
       },
     },
   }
