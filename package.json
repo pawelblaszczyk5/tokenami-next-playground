@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tokenami/css": "^0.0.3",
+    "@tokenami/css": "^0.0.7",
     "next": "canary",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@tokenami/dev": "^0.0.3",
-    "@tokenami/ts-plugin": "^0.0.3",
+    "@tokenami/dev": "^0.0.7",
+    "@tokenami/ts-plugin": "^0.0.7",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",

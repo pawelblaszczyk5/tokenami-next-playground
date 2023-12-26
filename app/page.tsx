@@ -1,7 +1,10 @@
 import { css } from "@tokenami/css";
 
 const text = css(
-  { "--padding": 2 },
+  {
+    "--padding": 2,
+    "--display": "block",
+  },
   {
     variant: {
       primary: {

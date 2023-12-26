@@ -1,4 +1,4 @@
-import { createConfig } from "@tokenami/dev";
+import { createConfig, defaultConfig } from "@tokenami/dev";
 
 export default createConfig({
   include: ["./app/**/*.{js,jsx,ts,tsx}"],
@@ -29,5 +29,9 @@ export default createConfig({
     transition: {},
     weight: {},
     z: {},
+  },
+  selectors: {
+    ...defaultConfig.selectors,
+    hover: ["@media (hover: hover) and (pointer: fine)", "&:hover"],
   },
 });
