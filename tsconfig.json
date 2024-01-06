@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".tokenami/tokenami.d.ts"
+    ".tokenami/tokenami.env.d.ts",
+    ".tokenami/tokenami.config.ts"
   ],
   "exclude": ["node_modules"]
 }

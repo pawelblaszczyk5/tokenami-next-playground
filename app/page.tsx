@@ -1,43 +1,24 @@
-import { css } from "@tokenami/css";
-
-const text = css(
-  {
-    "--padding": 2,
-    "--display": "block",
-  },
-  {
-    variant: {
-      primary: {
-        "--color": "var(--color-sky-500)",
-      },
-      secondary: {
-        "--color": "var(--color-slate-700)",
-        "--medium_hover_color": "var(--color-sky-500)",
-        "--font-size": "var(--font-size-sm)",
-      },
-    },
-  }
-);
 const Home = () => {
   return (
-    <div>
-      <p
-        style={text(
-          { variant: "primary" },
-          { "--font-size": "var(---, 2rem)" }
-        )}
+    <div
+      style={{
+        "--m": 5,
+      }}
+    >
+      <div
+        style={{
+          "--mx": 3,
+        }}
       >
-        Hello world
-      </p>
-      <p
-        style={text(
-          { variant: "secondary" },
-          { "--font-size": "var(---, 2.5rem)" },
-          { "--color": "var(---, red)" }
-        )}
-      >
-        Hello world
-      </p>
+        <p
+          style={{
+            // This isn't applied correctly
+            "--ml": 50,
+          }}
+        >
+          Hello world
+        </p>
+      </div>
     </div>
   );
 };
