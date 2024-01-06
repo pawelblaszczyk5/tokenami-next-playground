@@ -12,7 +12,7 @@ const Home = () => {
       >
         <p
           style={{
-            // This isn't applied correctly
+            // This isn't applied correctly due to the "--mx" on parent element
             "--ml": 50,
           }}
         >
