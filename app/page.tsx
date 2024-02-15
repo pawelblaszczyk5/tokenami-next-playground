@@ -1,25 +1,16 @@
+"use client";
+
+import { css } from '#/app/css';
+
 const Home = () => {
   return (
-    <div
-      style={{
-        "--m": 5,
-      }}
+    <h1
+      style={css({
+        "--margin": 5,
+      })}
     >
-      <div
-        style={{
-          "--mx": 3,
-        }}
-      >
-        <p
-          style={{
-            // This isn't applied correctly due to the "--mx" on parent element
-            "--ml": 50,
-          }}
-        >
-          Hello world
-        </p>
-      </div>
-    </div>
+      Hello world
+    </h1>
   );
 };
 
